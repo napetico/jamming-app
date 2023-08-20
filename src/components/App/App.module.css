@@ -1,0 +1,75 @@
+.appContainer {
+  width: 100%;
+  height: 100vh;
+  padding: 1.43vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.appHeader {
+  width: 5.71vw;
+  background-color: #1e1e1e;
+  border-radius: 0.7vw;
+  padding: 1.43vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jammmingLogo {
+  margin-top: 1vw;
+}
+
+.jammmingLetters {
+  margin-bottom: 1.76vw;
+}
+
+.searchContainer {
+  width: 50vw;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.57vw;
+  line-height: 1.5;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.43vw;
+  line-height: 1.4;
+  margin-left: 0.1vw;
+}
+
+.playlistContainer {
+  width: 37.14vw;
+}
+
+footer {
+  height: 2.14vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.4vw;
+}
+
+.footerText {
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 1.4;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-left: 0.4vw;
+}
+
+.footerLink {
+  height: 1vw;
+  margin: 0 0.4vw;
+}
