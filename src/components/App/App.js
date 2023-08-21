@@ -7,6 +7,8 @@ import githubLogo from './github-logo-jammming.png';
 import gmailLogo from './gmail-logo-jammming.png';
 import linkedinLogo from './linkedin-logo-jammming.png';
 
+import SearchBar from '../SearchBar/SearchBar';
+
 function App() {
   return (
     <main className={styles.appContainer}>
@@ -17,7 +19,7 @@ function App() {
       <section className={styles.searchContainer}>
         <h1>Hello Sheldon 👋🏽</h1>
         <p>Ready to put your playlist together?</p>
-        {/*<SearchBar />*/}
+        {<SearchBar />}
         {/*<SearchResults /<*/}
       </section>
       <aside className={styles.playlistContainer}>

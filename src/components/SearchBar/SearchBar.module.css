@@ -1,0 +1,43 @@
+.searchBarContainer {
+    height: 3.21vw;
+    width: 40vw;
+    background-color: #F8F8F8;
+    border-radius: 0.7vw;
+    padding-left: 1.43vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchImage {
+    height: 2.14vw;
+    margin-right: 1.43vw;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background-color: #F8F8F8;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-weight: 300;
+    font-size: 1.14vw;
+    color: #a5a5a5;
+}
+
+.searchButton {
+    color: white;
+    background-color: #1e1e1e;
+    border: none;
+    font-size: 1.43vw;
+    font-weight: 700;
+    padding: 0 2.14vw;
+    height: 100%;
+    border-radius: 0.7vw;
+    cursor: pointer;
+}
