@@ -1,0 +1,50 @@
+.playlistContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7vw;
+    background-color: #FFF0BB;
+    padding: 2.14vw;
+    margin-bottom: 0.7vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.playlistNameBox {
+    height: 4.5vw;
+    width: 70%;
+    background-color: #FFF7D9;
+    border-radius: 0.7vw;
+    padding-left: 1.25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5vw;
+}
+
+.albumImage {
+    height: 2.14vw;
+    margin-right: 1.07vw;
+}
+
+.spotifyButton {
+    color: white;
+    background-color: #000000;
+    border: none;
+    font-size: 1.43vw;
+    font-weight: 700;
+    padding: 1vw 2.14vw;
+    border-radius: 0.7vw;
+    cursor: pointer;
+    margin-top: 2.5vw;
+}
+
+.spotifyButton:hover {
+    color: #FFF0BB;
+    background-color: #1b1b1b;
+}
+
+.saveBtnBox {
+    display: flex;
+    justify-content: center;
+}

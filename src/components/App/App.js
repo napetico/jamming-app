@@ -1,3 +1,5 @@
+import React, {useState} from 'react';
+
 import styles from './App.module.css';
 
 import jammmingLogo from './jammming-logo.png';
@@ -8,8 +10,46 @@ import gmailLogo from './gmail-logo-jammming.png';
 import linkedinLogo from './linkedin-logo-jammming.png';
 
 import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
+import mockResults from '../../mock/mock';
 
 function App() {
+  const [searchResults, setSearchResults] = useState([]);
+  const [playlistTracks, setPlaylistTracks] = useState([]);
+  const [listName, setListName] = useState('');
+
+  const search = (mockResults) => {
+    setSearchResults(mockResults);
+  };
+
+  const addTrack = (track) => {
+    if (playlistTracks.some((savedTrack) => savedTrack.id === track.id))
+      return;
+
+    setPlaylistTracks((prev) => [...prev, track]);
+  };
+  
+  const removeTrack = (track) => {
+    setPlaylistTracks((prevTracks) => 
+      prevTracks.filter((currentTrack) => currentTrack.id !== track.id)
+    );
+  };
+
+  const changeListName = (name) => {
+    setListName(name);
+  }
+
+  const savePlaylist = () => {
+    if (playlistTracks.length === 0) {
+      return;
+    }
+    
+    alert(listName);
+    setPlaylistTracks([]);
+    setListName('');
+  }
+
   return (
     <main className={styles.appContainer}>
       <header className={styles.appHeader}>
@@ -19,11 +59,17 @@ function App() {
       <section className={styles.searchContainer}>
         <h1>Hello Sheldon 👋🏽</h1>
         <p>Ready to put your playlist together?</p>
-        {<SearchBar />}
-        {/*<SearchResults /<*/}
+        <SearchBar onSearch={search}/>
+        <SearchResults searchResults={searchResults} onAdd={addTrack} />
       </section>
       <aside className={styles.playlistContainer}>
-        {/*<Playlist /<*/}
+        <Playlist
+          listName={listName}
+          playlistTracks={playlistTracks}
+          onRemove={removeTrack}
+          onChangeName={changeListName}
+          onSave={savePlaylist}
+        />
         <footer>
           <p className={styles.footerText}>Thanks for clicking around!  |  Made by Napoleon Bazan  -  @napetico </p>
           <ul>
@@ -36,6 +82,6 @@ function App() {
       </aside>
     </main>
   );
-}
+};
 
 export default App;

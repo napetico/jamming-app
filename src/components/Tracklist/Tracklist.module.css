@@ -1,0 +1,30 @@
+.tracklist {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.emptyResults {
+ font-size: 3.2vw;
+ font-weight: 700;
+ line-height: 1.25;
+}
+
+.emptyStateBox {
+    width: 80%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0.7vw;
+    border-radius: 10vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #11111112;
+    border-radius: 10vw;
+}
