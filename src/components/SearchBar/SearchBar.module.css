@@ -19,6 +19,9 @@ input {
     width: 100%;
     border: none;
     background-color: transparent;
+    font-weight: 400;
+    font-size: 1.43vw;
+    line-height: 1.2;
 }
 
 input:focus {

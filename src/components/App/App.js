@@ -12,7 +12,8 @@ import linkedinLogo from './linkedin-logo-jammming.png';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
-import mockResults from '../../mock/mock';
+
+import Spotify from '../../util/Spotify';
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
@@ -21,6 +22,7 @@ function App() {
 
   const search = (mockResults) => {
     setSearchResults(mockResults);
+    //setSearchResults(searchInput);
   };
 
   const addTrack = (track) => {
@@ -44,8 +46,11 @@ function App() {
     if (playlistTracks.length === 0) {
       return;
     }
+
+    const uriArray = playlistTracks.map(track => track.uri);
     
-    alert(listName);
+    Spotify.printURI(uriArray);
+    Spotify.getAccessToken();
     setPlaylistTracks([]);
     setListName('');
   }
