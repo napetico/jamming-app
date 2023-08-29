@@ -1,17 +1,16 @@
 .searchResultsContainer {
     width: 100%;
     height: 100%;
-    border-radius: 0.7vw;
-    background-color: #f4f4f4;
-    padding: 2.14vw;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 h2 {
-    font-size: 1.86vw;
+    font-size: 1.71vw;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 2.14vw;
+    margin-bottom: 1.7vw;
+    color: white;
 }

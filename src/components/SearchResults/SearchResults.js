@@ -8,10 +8,10 @@ function SearchResults(props) {
         <div className={styles.searchResultsContainer}>
             <h2>Search Results</h2>
             <Tracklist 
-                trackBgColor='#ededed'
+                trackBgColor='#fff7d9b4'
                 trackBtnAction='Add to playlist'
                 emptyState='Nothing to show here :( Try writing something in the search bar...'
-                emptyFontColor='#DBDBDB'
+                emptyFontColor='#1E1E1E'
                 tracks={props.searchResults}
                 onClick={props.onAdd}
                 inPlaylist={false}

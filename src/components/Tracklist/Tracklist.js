@@ -20,14 +20,14 @@ function Tracklist(props) {
                     );
                 })}
             </div>
-        );
+        )
     } else {
         return (
             <div className={styles.emptyStateBox}>
                 <h3 className={styles.emptyResults} style={{color: props.emptyFontColor}}>{props.emptyState}</h3>
             </div>
-        );
-    }
+        )
+    };
 }
 
 export default Tracklist;

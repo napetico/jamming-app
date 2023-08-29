@@ -6,13 +6,32 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  background-image: url('./background-image-jammming.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.loggingHeader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000aa;
+  backdrop-filter: blur(0.25vw);
+  -webkit-backdrop-filter: blur(0.25vw);
+  border-radius: 0.7vw;
+  padding-top: 12vw;
 }
 
 .appHeader {
   width: 5.71vw;
-  background-color: #000000;
+  background-color: #000000aa;
+  backdrop-filter: blur(0.25vw);
+  -webkit-backdrop-filter: blur(0.25vw);
   border-radius: 0.7vw;
-  padding: 1.43vw;
+  padding: 2.5vw 1.43vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,38 +39,87 @@
 }
 
 .jammmingLogo {
-  margin-top: 1vw;
-}
-
-.jammmingLetters {
+  height: 2.86vw;
+  width: 2.86vw;
   margin-bottom: 1.76vw;
 }
 
+
+.jammmingLettersH {
+  width: 17.21vw;
+  margin-bottom: 1.43vw;
+}
+
+.jammmingLettersV {
+  width: 2.45vw;
+  margin-bottom: 0.43vw;
+}
+
+.logSmallP {
+  font-size: 1.29vw;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 2.5vw;
+}
+
+.loginButton {
+  color: black;
+  background-color: #FFDD64;
+  border: none;
+  font-size: 1.29vw;
+  font-weight: 700;
+  padding: 0.9vw 2.14vw;
+  border-radius: 0.7vw;
+  cursor: pointer;
+  margin-bottom: 10vw;
+}
+
+.loginButton:hover {
+  background-color: #ffd22f;
+}
+
 .searchContainer {
-  width: 50vw;
+  width: 51.43vw;
   display: flex;
   flex-direction: column;
+  background-color: #000000aa;
+  backdrop-filter: blur(0.25vw);
+  -webkit-backdrop-filter: blur(0.25vw);
+  border-radius: 0.7vw;
+  padding: 2.14vw;
 }
 
 h1 {
   font-weight: 700;
   font-size: 3.57vw;
   line-height: 1.2;
-  margin-bottom: 0.6vw;
+  margin-bottom: 0.71vw;
+  color: #ffffff;
 }
 
 p {
   font-weight: 400;
-  font-size: 1.43vw;
+  font-size: 1.29vw;
   line-height: 1.2;
   margin-left: 0.1vw;
-  margin-bottom: 2.5vw;
+  margin-bottom: 2.14vw;
+  color: #FFDD64;
 }
 
 .playlistContainer {
   width: 37.14vw;
   display: flex;
   flex-direction: column;
+}
+
+.loginFooter {
+  height: 2.14vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer {
@@ -61,6 +129,14 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0 0.4vw;
+}
+
+.loginfooterText {
+  color: #a8a8a8;
+  font-weight: 300;
+  font-size: 0.9vw;
+  line-height: 1.4;
+  margin-bottom: 0.7vw;
 }
 
 .footerText {

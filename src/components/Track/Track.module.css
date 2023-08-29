@@ -1,6 +1,6 @@
 .trackContainer {
     width: 100%;
-    height: 5vw;
+    height: 4.64vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +10,8 @@
 }
 
 .trackImage{
-    width: 3.57vw;
+    width: 3.21vw;
+    height: 3.21vw;
     height: 100%;
 }
 
@@ -21,10 +22,10 @@
 }
 
 h3 {
-    font-size: 1.29vw;
+    font-size: 1.14vw;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 0.15vw;
+    margin-bottom: 0.21vw;
 }
 
 .trackInfoBox h3 {
@@ -35,7 +36,7 @@ h3 {
 }
 
 .trackArtistName{
-    font-size: 1vw;
+    font-size: 0.93vw;
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 0;
@@ -43,22 +44,23 @@ h3 {
     white-space: nowrap;
     text-overflow: ellipsis;
     display: block;
-    
+    color: black;    
 }
 
 .trackSaveButton {
     width: 8vw;
     border: none;
     font-size: 0.8vw;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.2;
-    color: #949494;
-    font-style: italic;
+    color: #111111;
     cursor: pointer;
     margin-right: 1.07vw;
     background-color: transparent;
 }
 
 .trackSaveButton:hover {
-    color: #131313;
+    color: #111111;
+    font-weight: 400;
+    text-shadow: 0.05vw 0.05vw 0.1vw #11111132
 }
