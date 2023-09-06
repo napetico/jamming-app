@@ -11,7 +11,7 @@ function SearchResults(props) {
                 trackBgColor='#fff7d9b4'
                 trackBtnAction='Add to playlist'
                 emptyState='Nothing to show here :( Try writing something in the search bar...'
-                emptyFontColor='#1E1E1E'
+                emptyFontColor='#686868'
                 tracks={props.searchResults}
                 onClick={props.onAdd}
                 inPlaylist={false}

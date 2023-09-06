@@ -1,19 +1,23 @@
+/*  MAIN CONTAINER  */
 .appContainer {
   width: 100%;
   height: 100vh;
   max-height: 100vh;
   padding: 1.43vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  background-image: url('./background-image-jammming.jpg');
+  display: grid;
+  grid-template: 100% / 5.7vw 51.43vw 37.14vw;
+  gap: 1.43vw;
+  background-image: url('./jammming-background-image.jpg');
   background-size: cover;
   background-position: center;
 }
 
+
+/*  LOGIN  */
 .loggingHeader {
   width: 100%;
   height: 100%;
+  grid-column: 1 / 4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,34 +29,15 @@
   padding-top: 12vw;
 }
 
-.appHeader {
-  width: 5.71vw;
-  background-color: #000000aa;
-  backdrop-filter: blur(0.25vw);
-  -webkit-backdrop-filter: blur(0.25vw);
-  border-radius: 0.7vw;
-  padding: 2.5vw 1.43vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.jammmingLogo {
+.jammmingLoginLogo {
   height: 2.86vw;
   width: 2.86vw;
   margin-bottom: 1.76vw;
 }
 
-
-.jammmingLettersH {
+.jammmingLoginLettersH {
   width: 17.21vw;
   margin-bottom: 1.43vw;
-}
-
-.jammmingLettersV {
-  width: 2.45vw;
-  margin-bottom: 0.43vw;
 }
 
 .logSmallP {
@@ -79,8 +64,56 @@
   background-color: #ffd22f;
 }
 
+.loginFooter {
+  height: 2.14vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginfooterText {
+  color: #a8a8a8;
+  font-weight: 300;
+  font-size: 0.9vw;
+  line-height: 1.4;
+  margin-bottom: 0.7vw;
+}
+
+
+/*  DASHBOARD  */
+.appHeader {
+  width: 100%;
+  background-color: #000000aa;
+  backdrop-filter: blur(0.25vw);
+  -webkit-backdrop-filter: blur(0.25vw);
+  border-radius: 0.7vw;
+  padding: 2.5vw 1.43vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jammmingLogo {
+  height: 2.86vw;
+  width: 2.86vw;
+}
+
+.jammmingLettersH {
+  width: 17.21vw;
+  margin-bottom: 1.43vw;
+  display: none;
+}
+
+.jammmingLettersV {
+  width: 2.45vw;
+  margin-bottom: 0.43vw;
+}
+
 .searchContainer {
-  width: 51.43vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #000000aa;
@@ -108,18 +141,9 @@ p {
 }
 
 .playlistContainer {
-  width: 37.14vw;
-  display: flex;
-  flex-direction: column;
-}
-
-.loginFooter {
-  height: 2.14vw;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 
 footer {
@@ -129,14 +153,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 0 0.4vw;
-}
-
-.loginfooterText {
-  color: #a8a8a8;
-  font-weight: 300;
-  font-size: 0.9vw;
-  line-height: 1.4;
-  margin-bottom: 0.7vw;
 }
 
 .footerText {
@@ -156,4 +172,224 @@ ul {
 .footerLink {
   height: 1vw;
   margin: 0 0.4vw;
+}
+
+@media only screen and (max-width: 992px) {
+  /*  MAIN CONTAINER  */
+  .appContainer {
+    padding: 1.64vw;
+    grid-template: 7.5vh 85.5vh / 53.05vw 42.03vw;
+    gap: 1.64vw;
+  }
+
+
+  /*  LOGIN  */
+  .loggingHeader {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    backdrop-filter: blur(0.29vw);
+    -webkit-backdrop-filter: blur(0.29vw);
+    border-radius: 0.81vw;
+    padding-top: 13.8vw;
+  }
+
+  .jammmingLoginLogo {
+    height: 3.29vw;
+    width: 3.29vw;
+    margin-bottom: 2.02vw;
+  }
+
+  .jammmingLoginLettersH {
+    width: 19.79vw;
+    margin-bottom: 1.65vw;
+  }
+
+  .logSmallP {
+    font-size: 1.48vw;
+    margin-bottom: 2.88vw;
+  }
+
+  .loginButton {
+    font-size: 1.48vw;
+    padding: 1.04vw 2.46vw;
+    border-radius: 0.81vw;
+    margin-bottom: 11.5vw;
+  }
+
+  .loginFooter {
+    height: 2.46vw;
+  }
+
+  .loginfooterText {
+    font-size: 1.04vw;
+    margin-bottom: 0.81vw;
+  }
+
+
+  /*  DASHBOARD  */
+  .appHeader {
+    grid-column: 1 / 3;
+    backdrop-filter: blur(0.29vw);
+    -webkit-backdrop-filter: blur(0.29vw);
+    border-radius: 0.81vw;
+    padding: 1.43vw 2.14vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .jammmingLettersH {
+    width: 14.21vw;
+    margin-bottom: 0vw;
+    display: block;
+  }
+  
+  .jammmingLettersV {
+    display: none;
+  }
+  
+  .searchContainer {
+    backdrop-filter: blur(0.29vw);
+    -webkit-backdrop-filter: blur(0.29vw);
+    border-radius: 0.81vw;
+    padding: 2.46vw;
+  }
+  
+  h1 {
+    font-size: 3.93vw;
+    margin-bottom: 0.81vw;
+  }
+  
+  p {
+    font-size: 1.48vw;
+    margin-left: 0.12vw;
+    margin-bottom: 2.46vw;
+  }
+  
+  footer {
+    height: 2.48vw;
+    padding: 0 0.46vw;
+  }
+  
+  .footerText {
+    font-size: 1.15vw;
+  }
+  
+  ul {
+    margin-left: 0.46vw;
+  }
+  
+  .footerLink {
+    height: 1.15vw;
+    margin: 0 0.46vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /*  MAIN CONTAINER  */
+  .appContainer {
+    padding: 2.46vw;
+    height: 100vh;
+    grid-template: 6% 52.5% 39% / 95.08vw;
+    gap: 2.46vw;
+  }
+
+
+  /*  LOGIN  */
+  .loggingHeader {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    backdrop-filter: blur(0.58vw);
+    -webkit-backdrop-filter: blur(0.58vw);
+    border-radius: 1.62vw;
+    padding-top: 38vw;
+  }
+
+  .jammmingLoginLogo {
+    height: 6.58vw;
+    width: 6.58vw;
+    margin-bottom: 4.04vw;
+  }
+
+  .jammmingLoginLettersH {
+    width: 39.58vw;
+    margin-bottom: 2.30vw;
+  }
+
+  .logSmallP {
+    font-size: 2.96vw;
+    margin-bottom: 5.76vw;
+  }
+
+  .loginButton {
+    font-size: 2.96vw;
+    padding: 2.08vw 4.92vw;
+    border-radius: 1.62vw;
+    margin-bottom: 23vw;
+  }
+
+  .loginFooter {
+    height: 4.92vw;
+    margin-top: 15vw;
+  }
+
+  .loginfooterText {
+    font-size: 2.08vw;
+    margin-bottom: 1.62vw;
+  }
+
+
+  /*  DASHBOARD  */
+  .appHeader {
+    grid-column: 1;
+    backdrop-filter: blur(0.58vw);
+    -webkit-backdrop-filter: blur(0.58vw);
+    border-radius: 1.62vw;
+    padding: 2.86vw 4.28vw;
+  }
+
+  .jammmingLogo {
+    height: 5.22vw;
+    width: 5.22vw;
+  }
+  
+  .jammmingLettersH {
+    width: 25.42vw;
+  }
+  
+  .searchContainer {
+    backdrop-filter: blur(0.58vw);
+    -webkit-backdrop-filter: blur(0.58vw);
+    border-radius: 1.62vw;
+    padding: 4.92vw;
+  }
+  
+  h1 {
+    font-size: 7.86vw;
+    margin-bottom: 1.62vw;
+  }
+  
+  p {
+    font-size: 3.96vw;
+    margin-left: 0.24vw;
+    margin-bottom: 4.92vw;
+  }
+  
+  footer {
+    height: 4.98vw;
+    padding: 0 0.92vw;
+  }
+  
+  .footerText {
+    font-size: 2.30vw;
+  }
+  
+  ul {
+    margin-left: 0.92vw;
+  }
+  
+  .footerLink {
+    height: 2.30vw;
+    margin: 0 0.92vw;
+  }
 }

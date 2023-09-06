@@ -11,7 +11,6 @@
 
 .trackImage{
     width: 3.21vw;
-    height: 3.21vw;
     height: 100%;
 }
 
@@ -32,7 +31,6 @@ h3 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    display: block;
 }
 
 .trackArtistName{
@@ -48,7 +46,7 @@ h3 {
 }
 
 .trackSaveButton {
-    width: 8vw;
+    width: 9vw;
     border: none;
     font-size: 0.8vw;
     font-weight: 400;
@@ -63,4 +61,76 @@ h3 {
     color: #111111;
     font-weight: 400;
     text-shadow: 0.05vw 0.05vw 0.1vw #11111132
+}
+
+@media only screen and (max-width: 992px) {
+    .trackContainer {
+        height: 5.34vw;
+        border-radius: 0.81vw;
+        padding: 0.81vw;
+        margin-bottom: 0.81vw;
+    }
+    
+    .trackImage{
+        width: 3.69vw;
+    }
+    
+    .trackInfoBox {
+        margin: 0 1.23vw;
+    }
+    
+    h3 {
+        font-size: 1.31vw;
+        margin-bottom: 0.24vw;
+    }
+    
+    .trackArtistName{
+        font-size: 1.07vw;  
+    }
+    
+    .trackSaveButton {
+        width: 10.35vw;
+        font-size: 0.92vw;
+        margin-right: 1.23vw;
+    }
+    
+    .trackSaveButton:hover {
+        text-shadow: 0.06vw 0.06vw 0.12vw #11111132
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .trackContainer {
+        height: 10.68vw;
+        border-radius: 1.62vw;
+        padding: 1.62vw;
+        margin-bottom: 1.62vw;
+    }
+    
+    .trackImage{
+        width: 7.38vw;
+    }
+    
+    .trackInfoBox {
+        margin: 0 2.46vw;
+    }
+    
+    h3 {
+        font-size: 2.62vw;
+        margin-bottom: 0.48vw;
+    }
+    
+    .trackArtistName{
+        font-size: 2.14vw;  
+    }
+    
+    .trackSaveButton {
+        width: 22.70vw;
+        font-size: 1.84vw;
+        margin-right: 2.46vw;
+    }
+    
+    .trackSaveButton:hover {
+        text-shadow: 0.12vw 0.12vw 0.24vw #11111132
+    }
 }

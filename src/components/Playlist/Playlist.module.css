@@ -2,9 +2,8 @@
     width: 100%;
     height: 100%;
     border-radius: 0.7vw;
-    background-color: #130f00d6;
+    background-color: #ffffff25;
     padding: 2.14vw;
-    margin-bottom: 0.7vw;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -66,4 +65,82 @@
   .footerLink {
     height: 1vw;
     margin: 0 0.4vw;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .playlistContainer {
+        border-radius: 0.81vw;
+        padding: 2.46vw;
+    }
+    
+    .playlistNameBox {
+        height: 5.18vw;
+        border-radius: 0.81vw;
+        padding-left: 1.44vw;
+        margin-bottom: 2.46vw;
+    }
+    
+    .albumImage {
+        height: 2.46vw;
+        margin-right: 1.23vw;
+    }
+    
+    .spotifyButton {
+        font-size: 1.48vw;
+        padding: 1.04vw 2.46vw;
+        border-radius: 0.81vw;
+        margin: 2.06vw 0;
+    }
+    
+    .footerText {
+        font-size: 0.94vw;
+      }
+      
+      ul {
+        margin-left: 0.46vw;
+      }
+      
+      .footerLink {
+        height: 1vw;
+        margin: 0 0.46vw;
+      }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .playlistContainer {
+        border-radius: 1.62vw;
+        padding: 4.92vw;
+    }
+    
+    .playlistNameBox {
+        height: 10.36vw;
+        border-radius: 1.62vw;
+        padding-left: 2.88vw;
+        margin-bottom: 4.92vw;
+    }
+    
+    .albumImage {
+        height: 4.92vw;
+        margin-right: 2.46vw;
+    }
+    
+    .spotifyButton {
+        font-size: 2.96vw;
+        padding: 2.08vw 4.92vw;
+        border-radius: 1.62vw;
+        margin: 4.12vw 0;
+    }
+    
+    .footerText {
+        font-size: 1.88vw;
+      }
+      
+      ul {
+        margin-left: 0.92vw;
+      }
+      
+      .footerLink {
+        height: 2vw;
+        margin: 0 0.92vw;
+      }
   }

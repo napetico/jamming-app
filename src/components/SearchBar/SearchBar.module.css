@@ -20,7 +20,7 @@ input {
     border: none;
     background-color: transparent;
     font-weight: 400;
-    font-size: 1.29vw;
+    font-size: 1.17vw;
     line-height: 1.2;
 }
 
@@ -48,4 +48,62 @@ input::placeholder {
 
 .searchButton:hover {
     background-color: #ffd22f;
+}
+
+@media only screen and (max-width: 992px) {
+    .searchBarContainer {
+        height: 5.18vw;
+        width: 46vw;
+        border-radius: 0.81vw;
+        padding-left: 1.65vw;
+        margin-bottom: 2.19vw;
+    }
+    
+    .searchImage {
+        height: 2.3vw;
+        margin-right: 1.23vw;
+    }
+    
+    input {
+        font-size: 1.35vw;
+    }
+    
+    input::placeholder {
+        font-size: 1.31vw;
+    }
+    
+    .searchButton {
+        font-size: 1.48vw;
+        padding: 0 2.46vw;
+        border-radius: 0.81vw;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .searchBarContainer {
+        height: 10.36vw;
+        width: 80vw;
+        border-radius: 1.62vw;
+        padding-left: 3.30vw;
+        margin-bottom: 4.38vw;
+    }
+    
+    .searchImage {
+        height: 4.6vw;
+        margin-right: 2.46vw;
+    }
+    
+    input {
+        font-size: 2.70vw;
+    }
+    
+    input::placeholder {
+        font-size: 2.62vw;
+    }
+    
+    .searchButton {
+        font-size: 2.96vw;
+        padding: 0 4.92vw;
+        border-radius: 1.62vw;
+    }
 }

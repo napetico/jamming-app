@@ -14,3 +14,17 @@ h2 {
     margin-bottom: 1.7vw;
     color: white;
 }
+
+@media only screen and (max-width: 992px) {
+    h2 {
+        font-size: 1.97vw;
+        margin-bottom: 1.96vw;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h2 {
+        font-size: 3.94vw;
+        margin-bottom: 3.92vw;
+    }
+}

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import styles from './App.module.css';
 
@@ -21,17 +21,36 @@ function App() {
   const [playlistTracks, setPlaylistTracks] = useState([]);
   const [listName, setListName] = useState('');
   const [logged, setLogged] = useState(false);
+  const [userName, setUserName] = useState('');
 
-  const userName= 'Napoleon';
+  useEffect(() => {
+    const authenticated = Spotify.checkAuth();
+    if (authenticated) {
+      Spotify.getUserName()
+        .then((fetchName) => {
+          setUserName(fetchName);
+          setLogged(authenticated);
+        })
+        .catch((error) => {
+          console.error('Error fetching user name:', error);
+        });
+    } else {
+      console.log('Login failed');
+    }
+  }, [])
 
   const loginHandler = () => {
-    //Autorizar, obtener Token, Obtener Nombre de Usuario
-    setLogged(true);
+    Spotify.getAuth();
   };
 
-  const search = (mockResults) => {
-    setSearchResults(mockResults);
-    //setSearchResults(searchInput);
+  const search = (searchInput) => {
+    Spotify.searchTracks(searchInput)
+      .then((tracksArray) => {
+        setSearchResults(tracksArray);
+      })
+      .catch((error) => {
+        console.error('Error searching tracks:', error);
+      });
   };
 
   const addTrack = (track) => {
@@ -55,22 +74,27 @@ function App() {
     if (playlistTracks.length === 0) {
       return;
     }
-
-    const uriArray = playlistTracks.map(track => track.uri);
-    
-    //Spotify.printURI(uriArray);     --Testing uri array
-    Spotify.getAuth();
-    setPlaylistTracks([]);
-    setListName('');
+    const urisArray = playlistTracks.map(track => track.uri);
+    Spotify.createPlaylist(listName, urisArray)
+      .then((res) => {
+        if(res) {
+          alert('Playlist saved successfully :)')
+          setPlaylistTracks([]);
+          setListName('');
+        }
+      })
+      .catch((error) => {
+        console.error('Error saving playlist:', error);
+      });
   }
 
   if (!logged) {
     return (
       <main className={styles.appContainer}>
         <section className={styles.loggingHeader}>
-          <img className={styles.jammmingLogo} src={jammmingLogo} alt='Jammming Logo'/>
-          <img className={styles.jammmingLettersH} src={jammmingLettersH} alt=''/>
-          <p className={styles.logSmallP}>'THE' Playlist Maker</p>
+          <img className={styles.jammmingLoginLogo} src={jammmingLogo} alt='Jammming Logo'/>
+          <img className={styles.jammmingLoginLettersH} src={jammmingLettersH} alt=''/>
+          <p className={styles.logSmallP}>Playlist Maker</p>
           <button className={styles.loginButton} onClick={loginHandler}>Log in with Spotify</button>
           <footer className={styles.loginFooter}>
             <p className={styles.loginfooterText}>Thanks for clicking around!  |  Made by Napoleon Bazan  -  @napetico </p>
@@ -90,6 +114,7 @@ function App() {
         <header className={styles.appHeader}>
           <img className={styles.jammmingLogo} src={jammmingLogo} alt='Jammming Logo'/>
           <img className={styles.jammmingLettersV} src={jammmingLettersV} alt=''/>
+          <img className={styles.jammmingLettersH} src={jammmingLettersH} alt=''/>
         </header>
         <section className={styles.searchContainer}>
           <h1>Hello {userName} 👋🏽</h1>
