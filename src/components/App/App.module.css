@@ -290,7 +290,7 @@ ul {
   .appContainer {
     padding: 2.46vw;
     height: 100vh;
-    grid-template: 6% 52.5% 39% / 95.08vw;
+    grid-template: 6% 50.5% 41% / 95.08vw;
     gap: 2.46vw;
   }
 
