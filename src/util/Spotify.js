@@ -1,5 +1,5 @@
 const CLIENT_ID = '120bf3663c994eb68f836c4e0276b161';
-const REDIRECT_URI = 'https://napetico.github.io/jamming-app/';
+const REDIRECT_URI = 'https://napetico.github.io/jamming-app';
 const CLIENT_SECRET = '060b86f4d6fa476db83df847ac57972f';
 let accessToken;
 let userId;
