@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Jammming App - React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a basic music app that uses Spotify API to help users create and save playlist in their accounts.
 
-## Available Scripts
+It allows users to log in with their Spotify credentials, search songs by title or artist, add/remove tracks to a list, name the list, and save it to their Spotify account.
 
-In the project directory, you can run:
+This project is part of a off-line challenge from a Codecademy's Full Stack path.
 
-### `npm start`
+## Main Folders
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The ./src folder is organized as follows:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
++ ...src/components: Holds all the components' files (.js, .css, and images/icons)
++ ...src/mock: Keeps a .js file with a few arrays used to build the app before connecting it to the API.
++ ...src/util: Stores a file with the methods and variables used to connect and use Spotify's API.
 
-### `npm test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app is broken down into these pieces:
 
-### `npm run build`
++ App.js : This is the main component. It holds the maing logic, variables, states, and JSX components.
++ SearchResults.js : Holds three sections. The first one has the user's name and a short prompt. The second is the SearchBar component. The third ones is a Tracklist component that renders the results from the search.
++ SearchBar.js : This is the input field where users write their keywords and start the search by clicking on the button.
++ Playlist.js : This component renders the new playlist information as the user adds/removes tracks from the list. It also has an input to set a name for the playlist.
++ Tracklist.js : This component holds the list of tracks and it's used both in the SearchResults to show the songs returned from request to the API and in the Playlist component to show the tracks currently added to the list.
++ Tracks.js : This is the card tha renders each track information (sont title, artist, album, and cover). It also has a button to add or remove the track from/to the Playlist.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Here's a quick summary of the functionalities in the app:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
++ One-click login screen.
++ Basic dasboard: One section to manage the search and another one to manage the playlist.
++ The app welcomes the user by his/her name.
++ Search bar accepts song titles and artists names.
++ Search results are stack in the designated section (scrollable).
++ Each track is render in its individual box containing relevant info about it and a button to add/remove the track from the playlist.
++ Users can asign a name for their playlist.
++ Added tracks are stack in the playlist's scrollable section.
++ Saves the playlist to user's account in one click (resets the playlist section right after)
 
-### `npm run eject`
+## Techs
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
++ Code in VSC
++ Online Repository in GitHub
++ HTML, CSS and JavaScript
++ React.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Thanks for the help
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Special thanks to:
++ Franklin (@fjosue4) for his super helpfull assistance and that quick call that got me out of many doubts.
+Also thanks to @lukabrx and @Contreras, who sent me valuable notes and documentation.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributions and Feedback
 
-## Learn More
+Feel free to add, remove, change, and comment this App. I'll appreciate any thoughs or ideas that about how to make this a better code or me a better coder.
+Here are some features I left out due to the fact that this project had me stuck for more that 3 weeks and I needed to move forward:
++ Tracks change color on hover. I tried to do it using CSS but it did not work. I thought on using a state to change the color.
++ Initialize the search by presing 'Enter' on the keyboard.
++ Make the app take 150vh on mobile to give more space to the trackslists on Search Results and Playlist sections.
++ Reset the search bar and the search tracklist after saving the playlist.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for taking a look at this code. Feedback is very welcome!
+Find me in any of the channels listed in [this site](https://napetico.github.io/portfolio-website-v1/) I just built.
