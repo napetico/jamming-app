@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jamming-app/static/css/main.6c811b07.css",
+    "main.css": "/jamming-app/static/css/main.dd1dbaae.css",
     "main.js": "/jamming-app/static/js/main.8ef5eb1c.js",
     "static/js/787.00c28833.chunk.js": "/jamming-app/static/js/787.00c28833.chunk.js",
     "static/media/jammming-background-image.jpg": "/jamming-app/static/media/jammming-background-image.ff34984b77e1f2b2ea54.jpg",
@@ -10,12 +10,12 @@
     "static/media/gmail-logo-jammming.png": "/jamming-app/static/media/gmail-logo-jammming.a2f2146f929409405da0.png",
     "static/media/linkedin-logo-jammming.png": "/jamming-app/static/media/linkedin-logo-jammming.f249b38224ca41a0b909.png",
     "index.html": "/jamming-app/index.html",
-    "main.6c811b07.css.map": "/jamming-app/static/css/main.6c811b07.css.map",
+    "main.dd1dbaae.css.map": "/jamming-app/static/css/main.dd1dbaae.css.map",
     "main.8ef5eb1c.js.map": "/jamming-app/static/js/main.8ef5eb1c.js.map",
     "787.00c28833.chunk.js.map": "/jamming-app/static/js/787.00c28833.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c811b07.css",
+    "static/css/main.dd1dbaae.css",
     "static/js/main.8ef5eb1c.js"
   ]
 }
