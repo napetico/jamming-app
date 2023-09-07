@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/jammming-app/static/css/main.5ec943bb.css",
-    "main.js": "/jammming-app/static/js/main.90eb0baf.js",
-    "static/js/787.00c28833.chunk.js": "/jammming-app/static/js/787.00c28833.chunk.js",
-    "static/media/jammming-background-image.jpg": "/jammming-app/static/media/jammming-background-image.ff34984b77e1f2b2ea54.jpg",
-    "static/media/github-logo-jammming.png": "/jammming-app/static/media/github-logo-jammming.553c66159c5672f25df6.png",
-    "static/media/playlist-icon-jammming.png": "/jammming-app/static/media/playlist-icon-jammming.312f7ff7d91bfe5da511.png",
-    "static/media/discord-logo-jammming.png": "/jammming-app/static/media/discord-logo-jammming.5de04f93d4e03aa4b51c.png",
-    "static/media/gmail-logo-jammming.png": "/jammming-app/static/media/gmail-logo-jammming.a2f2146f929409405da0.png",
-    "static/media/linkedin-logo-jammming.png": "/jammming-app/static/media/linkedin-logo-jammming.f249b38224ca41a0b909.png",
-    "index.html": "/jammming-app/index.html",
-    "main.5ec943bb.css.map": "/jammming-app/static/css/main.5ec943bb.css.map",
-    "main.90eb0baf.js.map": "/jammming-app/static/js/main.90eb0baf.js.map",
-    "787.00c28833.chunk.js.map": "/jammming-app/static/js/787.00c28833.chunk.js.map"
+    "main.css": "/jamming-app/static/css/main.6c811b07.css",
+    "main.js": "/jamming-app/static/js/main.6f2a65d1.js",
+    "static/js/787.00c28833.chunk.js": "/jamming-app/static/js/787.00c28833.chunk.js",
+    "static/media/jammming-background-image.jpg": "/jamming-app/static/media/jammming-background-image.ff34984b77e1f2b2ea54.jpg",
+    "static/media/github-logo-jammming.png": "/jamming-app/static/media/github-logo-jammming.553c66159c5672f25df6.png",
+    "static/media/playlist-icon-jammming.png": "/jamming-app/static/media/playlist-icon-jammming.312f7ff7d91bfe5da511.png",
+    "static/media/discord-logo-jammming.png": "/jamming-app/static/media/discord-logo-jammming.5de04f93d4e03aa4b51c.png",
+    "static/media/gmail-logo-jammming.png": "/jamming-app/static/media/gmail-logo-jammming.a2f2146f929409405da0.png",
+    "static/media/linkedin-logo-jammming.png": "/jamming-app/static/media/linkedin-logo-jammming.f249b38224ca41a0b909.png",
+    "index.html": "/jamming-app/index.html",
+    "main.6c811b07.css.map": "/jamming-app/static/css/main.6c811b07.css.map",
+    "main.6f2a65d1.js.map": "/jamming-app/static/js/main.6f2a65d1.js.map",
+    "787.00c28833.chunk.js.map": "/jamming-app/static/js/787.00c28833.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ec943bb.css",
-    "static/js/main.90eb0baf.js"
+    "static/css/main.6c811b07.css",
+    "static/js/main.6f2a65d1.js"
   ]
 }
