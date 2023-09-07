@@ -110,6 +110,7 @@
     .playlistContainer {
         border-radius: 1.62vw;
         padding: 4.92vw;
+        background-color: #231e0fd1;
     }
     
     .playlistNameBox {
@@ -128,7 +129,7 @@
         font-size: 2.96vw;
         padding: 2.08vw 4.92vw;
         border-radius: 1.62vw;
-        margin: 4.12vw 0;
+        margin: 3.12vw 0;
     }
     
     .footerText {
