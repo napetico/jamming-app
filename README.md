@@ -60,6 +60,7 @@ Here are some features I left out due to the fact that this project had me stuck
 + Initialize the search by presing 'Enter' on the keyboard.
 + Make the app take 150vh on mobile to give more space to the trackslists on Search Results and Playlist sections.
 + Reset the search bar and the search tracklist after saving the playlist.
+I also have a Feature Brief for a few extra features that I made as part of this project. Read it [here](https://docs.google.com/document/d/1FZhNK0dZlvN9Irn-qG3pRF-WXv_dnwsT6r6-nEAzCsY/edit?usp=sharing) 
 
 Thanks for taking a look at this code. Feedback is very welcome!
 Find me in any of the channels listed in [this site](https://napetico.github.io/portfolio-website-v1/) I just built.
