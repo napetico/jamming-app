@@ -3,7 +3,7 @@ import styles from './SearchBar.module.css'
 
 import searchIcon from './magnifying-glass-jammming.png';
 
-import mockResults from '../../mock/mock'
+//import mockResults from '../../mock/mock'
 
 function SearchBar(props) {
     const [searchInput, setSearchInput] = useState('');

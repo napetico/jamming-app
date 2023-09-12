@@ -99,10 +99,10 @@ function App() {
           <footer className={styles.loginFooter}>
             <p className={styles.loginfooterText}>Thanks for clicking around!  |  Made by Napoleon Bazan  -  @napetico </p>
             <ul>
-              <li><a href=''><img className={styles.footerLink} src={gmailLogo} alt='Gmail Logo'/></a></li>
-              <li><a href=''><img className={styles.footerLink} src={linkedinLogo} alt='LinkedIn Logo'/></a></li>
-              <li><a href=''><img className={styles.footerLink} src={githubLogo} alt='GitHub Logo'/></a></li>
-              <li><a href=''><img className={styles.footerLink} src={discordLogo} alt='Discord Logo'/></a></li>
+              <li><a href='mailto:enabaro@gmail.com' target='_blank' rel='noreferrer'><img className={styles.footerLink} src={gmailLogo} alt='Gmail Logo'/></a></li>
+              <li><a href='https://www.linkedin.com/in/napoleon-bazan/' target='_blank' rel='noreferrer'><img className={styles.footerLink} src={linkedinLogo} alt='LinkedIn Logo'/></a></li>
+              <li><a href='https://github.com/napetico' target='_blank' rel='noreferrer'><img className={styles.footerLink} src={githubLogo} alt='GitHub Logo'/></a></li>
+              <li><a href='http://discordapp.com/users/1114347606756294687' target='_blank' rel='noreferrer'><img className={styles.footerLink} src={discordLogo} alt='Discord Logo'/></a></li>
             </ul>
           </footer>
         </section>
